@@ -1,8 +1,9 @@
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
-    <header className="bg-black ">
+    <header className="bg-indigo-900 border-b-2 ">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-3">
         <Link to="/">
           <h1 className="font-bold text-sm sm:text-xl flex flex-wrap">
@@ -14,7 +15,7 @@ const Header = () => {
             </span>
           </h1>
         </Link>
-        <form className="bg-black p-3 rounded-lg flex items-center">
+        <form className=" p-3 rounded-lg flex items-center">
           <input
             type="text"
             placeholder="Search..."
@@ -30,13 +31,11 @@ const Header = () => {
               Home
             </li>
           </Link>
-
           <Link to="/about">
             <li className="hidden sm:inline bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 cursor-pointer">
               About
             </li>
           </Link>
-
           <Link to="/sign-in">
             <li className=" bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 cursor-pointer">
               Sign In
