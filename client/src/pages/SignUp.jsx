@@ -79,7 +79,7 @@ const SignUp = () => {
           disabled={loading}
           className="bg-blue-500 hover:bg-blue-700 text-white p-3 rounded-lg uppercase"
         >
-          {loading ? "Loading..." : "Signup"}
+          {loading ? "Loading..." : "Sign Up"}
         </button>
       </form>
       <div className="flex gap-2 mt-5">
