@@ -38,9 +38,13 @@ const Header = () => {
               About
             </li>
           </Link>
-          <Link to="/sign-in">
+          <Link to="/profile">
             {currentUser ? (
-              <img src={currentUser.avatar} alt="profile pic" />
+              <img
+                className="rounded-full h-7 w-7 object-cover"
+                src={currentUser.avatar}
+                alt="profile pic"
+              />
             ) : (
               <li className=" bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 cursor-pointer">
                 Sign In
